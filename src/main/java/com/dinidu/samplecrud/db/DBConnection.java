@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static DBConnection dbConnection;
+    private static DBConnection dbConnection = null;
     private Connection connection;
 
     private DBConnection() throws ClassNotFoundException, SQLException {
